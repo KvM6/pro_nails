@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
+/* reset */
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @theme {
+
+    /* html */
+
+    --text-reset: 62.5%;
+
+    /* colors */
+
     --color-primary: #c3af9a;
     --color-secondary: #462532;
     --color-dark: #4d4639;
