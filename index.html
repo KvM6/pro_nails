@@ -1,25 +1,61 @@
 <!DOCTYPE html>
-<html lang="pl" class="bg-bright scroll-smooth text-reset">
+<html lang="pl" class="bg-primary scroll-smooth text-reset">
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./src/style.css" />
+		<link rel="stylesheet" href="src/style.css" />
 		<title>Pro Nails Weronika Piniarska</title>
 	</head>
 	<body class="">
 		<nav id="navbar" class="">
-			<div class="nav-container container flex flex-row justify-between bg-bright shadow-md">
-				<button class="nav-brand p-6 text-5xl text-dark" type="button">
-					PN
-				</button>
-				<button class="hamburger hamburger--collapse p-6" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner text-dark"></span>
-					</span>
-				</button>
+			<div
+				class="nav-container w-dvw flex flex-row justify-center bg-primary shadow-md"
+			>
+				<div class="container flex flex-row justify-between">
+					<button
+						class="nav-brand p-6 text-5xl text-secondary hover:text-bright cursor-pointer"
+						type="button"
+					>
+						PN
+					</button>
+					<button class="hamburger hamburger--collapse p-6 z-20" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
 			</div>
-      
+
+			<div
+				class="nav-mobile h-dvh w-dvw top-0 fixed flex flex-col justify-center items-center text-4xl text-secondary bg-bright translate-x-full"
+			>
+				<a
+					href="#start"
+					class="mobile-item m-1 p-16 hover:text-primary focus:text-primary"
+					>Start</a
+				>
+				<a
+					href="#about"
+					class="mobile-item m-1 p-16 hover:text-primary focus:text-primary"
+					>O mnie</a
+				>
+				<a
+					href="#offer"
+					class="mobile-item m-1 p-16 hover:text-primary focus:text-primary"
+					>Oferta</a
+				>
+				<a
+					href="#galery"
+					class="mobile-item m-1 p-16 hover:text-primary focus:text-primary"
+					>Galeria</a
+				>
+				<a
+					href="#contact"
+					class="mobile-item m-1 p-16 hover:text-primary focus:text-primary"
+					>Kontakt</a
+				>
+			</div>
 		</nav>
 
 		<script type="module" src="/src/main.js"></script>

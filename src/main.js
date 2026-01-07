@@ -1,4 +1,9 @@
-// import './style.css'
+// DOME elements
+
+// Navigation
+
+let hamburger;
+let navMobile;
 
 const main = () => {
 	prepareDOMElements();
@@ -7,11 +12,20 @@ const main = () => {
 
 // Load DOME content
 
-const prepareDOMElements = () => {};
+const prepareDOMElements = () => {
+	hamburger = document.querySelector(".hamburger");
+	navMobile = document.querySelector(".nav-mobile");
+};
 
 // Load all events
 
-const prepareDOMEvents = () => {};
+const prepareDOMEvents = () => {
+	hamburger.addEventListener("click", () => {
+		hamburger.classList.toggle("is-active");
+		navMobile.classList.toggle('translate-x-full')
+		navMobile.classList.toggle('translate-none')
+	});
+};
 
 // Load main function on Web load
 
