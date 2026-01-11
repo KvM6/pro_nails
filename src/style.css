@@ -1,29 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
 @import "tailwindcss";
 @import "./hamburger.css";
 
 /* reset */
 
 @layer base {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 @theme {
+	/* html */
 
-    /* html */
+	--text-reset: 62.5%;
 
-    --text-reset: 62.5%;
+	/* colors */
 
-    /* colors */
+	--color-primary: #c3af9a;
+	--color-secondary: #462532;
+	--color-dark: #4d4639;
+	--color-bright: #ece9e7;
 
-    --color-primary: #c3af9a;
-    --color-secondary: #462532;
-    --color-dark: #4d4639;
-    --color-bright: #ece9e7;
+	/* fonts */
 
-    /* background img */
-
+	--font-poppins: "Poppins", sans-serif;
 }
