@@ -1,3 +1,6 @@
+// Import CSS
+import "./style.css";
+
 // DOME elements
 
 // Navigation
@@ -22,8 +25,8 @@ const prepareDOMElements = () => {
 const prepareDOMEvents = () => {
 	hamburger.addEventListener("click", () => {
 		hamburger.classList.toggle("is-active");
-		navMobile.classList.toggle('translate-x-full')
-		navMobile.classList.toggle('translate-none')
+		navMobile.classList.toggle("translate-x-full");
+		navMobile.classList.toggle("translate-none");
 	});
 };
 
