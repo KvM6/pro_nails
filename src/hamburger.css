@@ -28,7 +28,7 @@
 .hamburger:hover .hamburger-inner,
 .hamburger:hover .hamburger-inner::before,
 .hamburger:hover .hamburger-inner::after {
-	background-color: #ece9e7;
+	background-color: #462532;
 }
 
 .hamburger.is-active:hover {
@@ -38,13 +38,13 @@
 .hamburger.is-active:hover .hamburger-inner,
 .hamburger.is-active:hover .hamburger-inner::before,
 .hamburger.is-active:hover .hamburger-inner::after {
-	background-color: #c3af9a;
+	background-color: #462532;
 }
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-	background-color: #462532;
+	background-color: #c3af9a;
 }
 
 .hamburger-box {
@@ -66,7 +66,7 @@
 	cursor: pointer;
 	width: 40px;
 	height: 3px;
-	background-color: #462532;
+	background-color: #c3af9a;
 	border-radius: 4px;
 	position: absolute;
 	transition-property: transform;
