@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" class="bg-dark scroll-smooth text-reset">
+<html lang="pl" class="bg-bright scroll-smooth text-reset">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,12 +12,12 @@
 		<title>Pro Nails Weronika Piniarska</title>
 	</head>
 	<body class="">
-		<nav id="navbar" class="sticky top-0 z-10">
+		<nav id="navbar" class="fixed top-0 z-10">
 			<div
 				class="nav-container w-dvw flex flex-row justify-center bg-transparen shadow-md"
 			>
+				<div class="absolute top-0 h-full w-full bg-dark opacity-40"></div>
 				<div class="container flex flex-row justify-between">
-					<div class="absolute top-0 h-full w-full bg-dark opacity-40"></div>
 					<button
 						class="nav-brand p-6 text-5xl text-primary hover:text-secondary cursor-pointer z-0"
 						type="button"
@@ -64,19 +64,36 @@
 		</nav>
 
 		<header
-			class="header absolute top-0 h-dvh w-dvw bg-[url(/src/heroimg.JPG)] bg-center bg-no-repeat bg-origin-border bg-cover flex flex-col justify-end items-center z-0"
+			class="header relative top-0 left-0 h-dvh w-dvw bg-[url(/src/heroimg.JPG)] bg-center bg-no-repeat bg-origin-border bg-cover flex flex-col justify-end items-center z-0"
 		>
-			<div class="absolute top-0 h-dvh w-dvw bg-dark opacity-30 z-0"></div>
-			<div class="text-container mb-40 flex flex-col items-center z-10">
-				<h1 class="header-heading font-poppins font-bold p-3 text-8xl text-primary">ProNails</h1>
-				<h3 class="header-subheading font-poppins font-normal p-3 text-4xl text-primary">
+			<div
+				class="absolute top-0 left-0 h-dvh w-dvw bg-dark opacity-30 z-0"
+			></div>
+			<div class="text-container mb-32 flex flex-col items-center z-10">
+				<h1
+					class="header-heading font-poppins font-bold p-3 text-8xl text-primary"
+				>
+					ProNails
+				</h1>
+				<h2
+					class="header-subheading font-poppins font-normal p-3 text-5xl text-primary"
+				>
 					Weronika Piniarska
-				</h3>
+				</h2>
 			</div>
 			<button
 				class="h-24 w-24 mask-[url(/src/arrows/right_arrow.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10"
 			></button>
 		</header>
+
+		<main class="main">
+			<section id="about" class="about-me flex justify-center">
+				<div class="container flex flex-col items-center">
+					<h3 class="font-poppins font-bold p-6 mt-10 text-5xl text-secondary">O mnie</h3>
+					<p class="font-poppins fonr-normal text-center p-6 text-4xl text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et similique voluptas, praesentium fuga impedit vitae laudantium laboriosam rerum nemo quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta magni dolore. Odio, minima similique!</p>
+				</div>
+			</section>
+		</main>
 
 		<script type="module" src="./src/main.js"></script>
 	</body>
