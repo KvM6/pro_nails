@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl" class="bg-bright scroll-smooth text-reset">
 	<head>
 		<meta charset="UTF-8" />
@@ -64,10 +64,10 @@
 		</nav>
 
 		<header
-			class="header relative top-0 left-0 h-dvh w-dvw bg-[url(/hearoIMG.png)] bg-center bg-no-repeat bg-origin-border bg-cover flex flex-col justify-end items-center z-0"
+			class="header relative top-0 left-0 h-dvh w-dvw bg-[url(/hearoIMG.png)] bg-center bg-no-repeat bg-origin-border bg-cover flex flex-col justify-end items-center rounded-b-4xl z-0"
 		>
 			<div
-				class="absolute top-0 left-0 h-dvh w-dvw bg-dark opacity-30 z-0"
+				class="absolute top-0 left-0 h-dvh w-dvw bg-dark opacity-30 rounded-b-4xl z-0"
 			></div>
 			<div class="text-container mb-32 flex flex-col items-center z-10">
 				<h1
@@ -86,14 +86,14 @@
 			></button>
 		</header>
 
-		<main class="main">
+		<main class="main mt-14">
 			<section id="about" class="about-me relative flex justify-center">
 				<div class="container flex flex-col items-center">
 					<div
-						class="h-dvh w-dvw flex flex-col items-center bg-[url(/aboutIMG.png)] bg-center bg-no-repeat bg-origin-border bg-cover z-0"
+						class="h-dvh w-dvw flex flex-col items-center bg-[url(/aboutIMG.png)] bg-center bg-no-repeat bg-origin-border bg-cover rounded-4xl z-0"
 					>
 						<div
-							class="absolute top-0 h-dvh w-dvw bg-dark opacity-80 z-0"
+							class="absolute top-0 h-dvh w-dvw bg-dark opacity-80 rounded-4xl z-0"
 						></div>
 						<h2
 							class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary z-10"
@@ -123,7 +123,7 @@
 				id="offers"
 				class="offers relative flex justify-center bg-bright"
 			>
-				<div class="w-dvw container flex flex-col items-center">
+				<div class="container flex flex-col items-center">
 					<h2
 						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary"
 					>
@@ -232,6 +232,90 @@
 									aspernatur neque rerum illo.
 								</p>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="gallery" class="gallery relative flex justify-center rounded-t-4xl bg-primary">
+				<div class="flex flex-col items-center">
+						<h2
+						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-secondary"
+					>
+						Galeria
+					</h2>
+
+					<!-- Thumbnail Grid -->
+					<div class="mt-14 px-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
+						<!-- Repeat for each image; add data-index for JS -->
+						<img
+							src="./public/nails_1.png"
+							alt="Nail design 1"
+							class="w-full h-full object-cover cursor-pointer rounded shadow"
+							data-index="0"
+							onclick="openModal(this)"
+						/>
+						<img
+							src="./public/nails_2.png"
+							alt="Nail design 2"
+							class="w-full h-full object-cover cursor-pointer rounded shadow"
+							data-index="1"
+							onclick="openModal(this)"
+						/>
+						<img
+							src="./public/nails_3.png"
+							alt="Nail design 3"
+							class="w-full h-full object-cover cursor-pointer rounded shadow"
+							data-index="2"
+							onclick="openModal(this)"
+						/>
+						<img
+							src="./public/nails_4.png"
+							alt="Nail design 3"
+							class="w-full h-full object-cover cursor-pointer rounded shadow"
+							data-index="3"
+							onclick="openModal(this)"
+						/>
+						<!-- Add more images as needed -->
+					</div>
+
+					<!-- Modal (hidden by default) -->
+					<div
+						id="modal"
+						class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden"
+					>
+						<div class="relative max-w-4xl w-full p-4">
+							<!-- Close Button -->
+							<button
+								class="absolute top-4 right-4 text-white text-3xl font-light"
+								onclick="closeModal()"
+							>
+								&times;
+							</button>
+
+							<!-- Large Image -->
+							<img
+								id="modalImage"
+								src=""
+								alt="Enlarged nail design"
+								class="w-full h-auto object-contain rounded"
+							/>
+
+							<!-- Navigation Buttons -->
+							<button
+								id="prevBtn"
+								class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-light"
+								onclick="changeImage(-1)"
+							>
+								&lt;
+							</button>
+							<button
+								id="nextBtn"
+								class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-light"
+								onclick="changeImage(1)"
+							>
+								&gt;
+							</button>
 						</div>
 					</div>
 				</div>
