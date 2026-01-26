@@ -237,45 +237,59 @@
 				</div>
 			</section>
 
-			<section id="gallery" class="gallery relative flex justify-center rounded-t-4xl bg-primary">
+			<section id="gallery" class="gallery relative rounded-4xl bg-primary">
 				<div class="flex flex-col items-center">
-						<h2
+					<h2
 						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-secondary"
 					>
 						Galeria
 					</h2>
 
 					<!-- Thumbnail Grid -->
-					<div class="mt-14 px-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
+					<div
+						class="mt-14 px-8 pb-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10"
+					>
 						<!-- Repeat for each image; add data-index for JS -->
-						<img
-							src="./public/nails_1.png"
-							alt="Nail design 1"
-							class="w-full h-full object-cover cursor-pointer rounded shadow"
-							data-index="0"
-							onclick="openModal(this)"
-						/>
-						<img
-							src="./public/nails_2.png"
-							alt="Nail design 2"
-							class="w-full h-full object-cover cursor-pointer rounded shadow"
-							data-index="1"
-							onclick="openModal(this)"
-						/>
-						<img
-							src="./public/nails_3.png"
-							alt="Nail design 3"
-							class="w-full h-full object-cover cursor-pointer rounded shadow"
-							data-index="2"
-							onclick="openModal(this)"
-						/>
-						<img
-							src="./public/nails_4.png"
-							alt="Nail design 3"
-							class="w-full h-full object-cover cursor-pointer rounded shadow"
-							data-index="3"
-							onclick="openModal(this)"
-						/>
+
+						<div class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer">
+							<img
+								src="/nails_1.png"
+								alt="Nail design 1"
+								class="w-full h-full object-cover"
+								data-index="0"
+								onclick="openModal(this)"
+							/>
+						</div>
+						<div class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer">
+							<img
+								src="/nails_2.png"
+								alt="Nail design 2"
+								class="w-full h-full object-cover"
+								data-index="1"
+								onclick="openModal(this)"
+							/>
+						</div>
+						<div
+							class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer"
+						>
+							<img
+								src="/nails_3.png"
+								alt="Nail design 3"
+								class="w-full h-full object-cover"
+								data-index="2"
+								onclick="openModal(this)"
+							/>
+						</div>
+						<div class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer">
+							<img
+								src="/nails_4.png"
+								alt="Nail design 3"
+								class="w-full h-full object-cover"
+								data-index="3"
+								onclick="openModal(this)"
+							/>
+						</div>
+
 						<!-- Add more images as needed -->
 					</div>
 
