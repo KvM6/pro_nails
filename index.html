@@ -82,7 +82,7 @@
 				</h2>
 			</div>
 			<button
-				class="h-24 w-24 mask-[url(/src/icons/right_arrow.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10"
+				class="h-24 w-24 mask-[url(/src/icons/right_arrow.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
 			></button>
 		</header>
 
@@ -101,7 +101,7 @@
 							O mnie
 						</h2>
 						<p
-							class="relative font-poppins fonr-normal text-center p-6 mt-14 text-4xl text-primary z-10"
+							class="relative font-poppins font-normal text-center p-6 mt-14 text-4xl text-primary z-10"
 						>
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
 							similique voluptas, praesentium fuga impedit vitae laudantium
@@ -110,7 +110,7 @@
 							Odio, minima similique!
 						</p>
 						<p
-							class="relative font-poppins fonr-normal text-center p-6 text-4xl text-primary z-10"
+							class="relative font-poppins font-normal text-center p-6 text-4xl text-primary z-10"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
 							impedit quis corporis, omnis eius tenetur.
@@ -251,7 +251,9 @@
 					>
 						<!-- Repeat for each image; add data-index for JS -->
 
-						<div class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer">
+						<div
+							class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer"
+						>
 							<img
 								src="/nails_1.png"
 								alt="Nail design 1"
@@ -260,7 +262,9 @@
 								onclick="openModal(this)"
 							/>
 						</div>
-						<div class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer">
+						<div
+							class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer"
+						>
 							<img
 								src="/nails_2.png"
 								alt="Nail design 2"
@@ -280,7 +284,9 @@
 								onclick="openModal(this)"
 							/>
 						</div>
-						<div class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer">
+						<div
+							class="h-full aspect-3/4 overflow-hidden rounded shadow cursor-pointer"
+						>
 							<img
 								src="/nails_4.png"
 								alt="Nail design 3"
@@ -335,7 +341,100 @@
 				</div>
 			</section>
 
-			<section id="contact" class="contact"></section>
+			<section
+				id="contact"
+				class="contact relative flex justify-center bg-bright"
+			>
+				<div class="container h-dvh w-dvw flex flex-col items-center">
+					<h2
+						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary"
+					>
+						Kontakt
+					</h2>
+
+					<div
+						class="contact-wrapp h-fit w-full flex flex-col items-center p-6"
+					>
+						<h3
+							class="font-poppins font-normal text-center mt-14 text-5xl text-primary"
+						>
+							Godziny otwarcia
+						</h3>
+						<p
+							class="font-poppins font-normal text-center mt-14 text-4xl text-primary"
+						>
+							Poniedziałek
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+						>
+							10:00 - 16:00
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
+						>
+							Wtorek
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+						>
+							08:00 - 6:00
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
+						>
+							Środa
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+						>
+							08:00 - 16:00
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
+						>
+							Czwartek
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+						>
+							10:00 - 16:00
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
+						>
+							Piątek
+						</p>
+						<p
+							class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+						>
+							08:00 - 14:00
+						</p>
+						<h3
+							class="font-poppins font-normal text-center mt-14 text-5xl text-primary"
+						>
+							Umów wizytę
+						</h3>
+						<h4
+							class="font-poppins font-normal text-center mt-14 text-4xl text-primary"
+						>
+							+48 501 689 361
+						</h4>
+						<h4
+							class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
+						>
+							piniarskaw@gmail.com
+						</h4>
+						<a
+							href="https://booksy.com/pl-pl/247603_pro-nails-weronika-piniarska_paznokcie_17029_gniezno#ba_s=seo"
+							class=""
+							><div
+								class="h-32 w-96 mask-[url(/src/icons/booksy.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary cursor-pointer"
+							></div
+						></a>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<script type="module" src="./src/main.js"></script>
