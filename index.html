@@ -19,7 +19,7 @@
 				<div class="absolute top-0 h-full w-full bg-dark opacity-40"></div>
 				<div class="container flex flex-row justify-between">
 					<button
-						class="nav-brand p-6 text-5xl text-primary hover:text-secondary cursor-pointer z-0"
+						class="nav-brand p-6 text-5xl text-primary hover:text-secondary cursor-pointer z-0 md:text-6xl"
 						type="button"
 					>
 						PN
@@ -33,11 +33,9 @@
 			</div>
 
 			<div
-				class="nav-mobile h-dvh w-dvw top-0 fixed flex flex-col justify-center items-center text-4xl text-secondary bg-secondary translate-x-full"
+				class="nav-mobile h-dvh w-dvw top-0 fixed bg-[url(/nav-mobile.png)] bg-left bg-no-repeat bg-origin-border bg-cover flex flex-col justify-center items-center text-4xl text-secondary translate-x-full"
 			>
-				<div
-					class="absolute top-0 h-dvh w-dvw bg-dark opacity-80 z-0"
-				></div>
+				<div class="absolute top-0 h-dvh w-dvw bg-dark opacity-80 z-0"></div>
 				<div
 					class="h-full w-full fixed flex flex-col justify-center items-center"
 				>
@@ -78,12 +76,12 @@
 			></div>
 			<div class="text-container mb-32 flex flex-col items-center z-10">
 				<h1
-					class="header-heading font-poppins font-bold p-3 text-8xl text-primary"
+					class="header-heading font-poppins font-bold p-3 text-8xl text-primary md:text-9xl"
 				>
 					ProNails
 				</h1>
 				<h2
-					class="header-subheading font-poppins font-normal p-3 text-5xl text-primary"
+					class="header-subheading font-poppins font-normal p-3 text-5xl text-primary md:text-6xl"
 				>
 					Weronika Piniarska
 				</h2>
@@ -103,12 +101,12 @@
 							class="absolute top-0 h-dvh w-dvw bg-dark opacity-80 rounded-4xl z-0"
 						></div>
 						<h2
-							class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary z-10"
+							class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary z-10 md:text-7xl"
 						>
 							O mnie
 						</h2>
 						<p
-							class="relative font-poppins font-normal text-center p-6 mt-14 text-4xl text-primary z-10"
+							class="relative font-poppins font-normal text-center p-6 mt-14 text-4xl text-primary z-10 md:mt-48 md:text-5xl"
 						>
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
 							similique voluptas, praesentium fuga impedit vitae laudantium
@@ -117,7 +115,7 @@
 							Odio, minima similique!
 						</p>
 						<p
-							class="relative font-poppins font-normal text-center p-6 text-4xl text-primary z-10"
+							class="relative font-poppins font-normal text-center p-6 text-4xl text-primary z-10 md:text-5xl"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
 							impedit quis corporis, omnis eius tenetur.
@@ -130,138 +128,146 @@
 				id="offers"
 				class="offers relative flex justify-center bg-bright"
 			>
-				<div class="container flex flex-col items-center">
+				<div class="flex flex-col items-center">
 					<h2
-						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary"
+						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary md:text-7xl"
 					>
 						Oferta
 					</h2>
 
-					<div class="card-wrapp p-6 mt-7 mb-7">
-						<div class="card front bg-bright">
-							<div
-								class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
-							></div>
-							<div class="inner">
-								<h3
-									class="relative font-poppins font-bold text-5xl text-primary z-10"
-								>
-									Paznokcie żelowe / manicure żelowy
-								</h3>
-								<!-- <p
+					<div class="offer-cards md:grid md:grid-cols-2 md:gap-4">
+						<div class="card-wrapp p-6 mt-7 mb-7">
+							<div class="card front bg-bright">
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
+								></div>
+								<div class="inner">
+									<h3
+										class="relative font-poppins font-bold text-5xl text-primary z-10 md:text-6xl"
+									>
+										Paznokcie żelowe / manicure żelowy
+									</h3>
+									<!-- <p
 									class="mt-8 font-poppins font-normal text-4xl text-primary z-10"
 								>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								</p> -->
-								<!-- <button
+									<!-- <button
 									class="h-16 w-16 mt-24 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
 								></button> -->
+								</div>
+							</div>
+							<div class="card back bg-bright">
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
+								></div>
+								<div class="inner">
+									<p
+										class="font-poppins font-normal text-4xl text-primary z-10"
+									>
+										Manicure żelowy (TO NIE SĄ PRZEDŁUŻANE PAZNOKCIE, pracuję z
+										taką długością jaka jest), to wzmocnienie żelem dla paznokci
+										krótkich jak i dłuższych, ...
+									</p>
+									<a
+										href="https://booksy.com/pl-pl/247603_pro-nails-weronika-piniarska_paznokcie_17029_gniezno#ba_s=seo"
+										class="h-24 w-24"
+									>
+										<button
+											class="h-16 w-16 mt-14 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
+										></button>
+									</a>
+								</div>
 							</div>
 						</div>
-						<div class="card back bg-bright">
-							<div
-								class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
-							></div>
-							<div class="inner">
-								<p class="font-poppins font-normal text-4xl text-primary z-10">
-									Manicure żelowy (TO NIE SĄ PRZEDŁUŻANE PAZNOKCIE, pracuję z
-									taką długością jaka jest), to wzmocnienie żelem dla paznokci
-									krótkich jak i dłuższych, ...
-								</p>
-								<a
-									href="https://booksy.com/pl-pl/247603_pro-nails-weronika-piniarska_paznokcie_17029_gniezno#ba_s=seo"
-									class="h-24 w-24"
-								>
-									<button
-										class="h-16 w-16 mt-14 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
-									></button>
-								</a>
-							</div>
-						</div>
-					</div>
 
-					<div class="card-wrapp p-6 mt-7 pb-7">
-						<div class="card front bg-bright">
-							<div
-								class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
-							></div>
-							<div class="inner">
-								<h3
-									class="relative font-poppins font-bold text-5xl text-primary z-10"
-								>
-									Manicure hybrydowy BAZA
-								</h3>
-								<!-- <p
+						<div class="card-wrapp p-6 mt-7 pb-7">
+							<div class="card front bg-bright">
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
+								></div>
+								<div class="inner">
+									<h3
+										class="relative font-poppins font-bold text-5xl text-primary z-10 md:text-6xl"
+									>
+										Manicure hybrydowy BAZA
+									</h3>
+									<!-- <p
 									class="mt-8 font-poppins font-normal text-4xl text-primary z-10"
 								>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								</p> -->
-								<!-- <button
+									<!-- <button
 									class="h-16 w-16 mt-24 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
 								></button> -->
+								</div>
+							</div>
+							<div class="card back bg-bright">
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
+								></div>
+								<div class="inner">
+									<p
+										class="font-poppins font-normal text-4xl text-primary z-10"
+									>
+										Manicure hybrydowy przeznaczony dla paznokci krótkich, bez
+										deformacji, bezproblemowych. To peerfekcyjne opracowanie
+										skórek, ...
+									</p>
+									<a
+										href="https://booksy.com/pl-pl/247603_pro-nails-weronika-piniarska_paznokcie_17029_gniezno#ba_s=seo"
+										class="h-24 w-24"
+									>
+										<button
+											class="h-16 w-16 mt-14 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
+										></button>
+									</a>
+								</div>
 							</div>
 						</div>
-						<div class="card back bg-bright">
-							<div
-								class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
-							></div>
-							<div class="inner">
-								<p class="font-poppins font-normal text-4xl text-primary z-10">
-									Manicure hybrydowy przeznaczony dla paznokci krótkich, bez
-									deformacji, bezproblemowych. To peerfekcyjne opracowanie
-									skórek, ...
-								</p>
-								<a
-									href="https://booksy.com/pl-pl/247603_pro-nails-weronika-piniarska_paznokcie_17029_gniezno#ba_s=seo"
-									class="h-24 w-24"
-								>
-									<button
-										class="h-16 w-16 mt-14 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
-									></button>
-								</a>
-							</div>
-						</div>
-					</div>
 
-					<div class="card-wrapp p-6 mt-7 mb-7">
-						<div class="card front bg-bright">
-							<div
-								class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
-							></div>
-							<div class="inner">
-								<h3
-									class="relative font-poppins font-bold text-5xl text-primary z-10"
-								>
-									Manicure hybrydowy KOLOR / paznokcie hybrydowe
-								</h3>
-								<!-- <p
+						<div class="card-wrapp p-6 mt-7 mb-7 md:col-span-2">
+							<div class="card front bg-bright">
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
+								></div>
+								<div class="inner">
+									<h3
+										class="relative font-poppins font-bold text-5xl text-primary z-10 md:text-6xl"
+									>
+										Manicure hybrydowy KOLOR / paznokcie hybrydowe
+									</h3>
+									<!-- <p
 									class="mt-8 font-poppins font-normal text-4xl text-primary z-10"
 								>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								</p> -->
-								<!-- <button
+									<!-- <button
 									class="h-16 w-16 mt-24 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
 								></button> -->
+								</div>
 							</div>
-						</div>
-						<div class="card back bg-bright">
-							<div
-								class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
-							></div>
-							<div class="inner">
-								<p class="font-poppins font-normal text-4xl text-primary z-10">
-									Manicure hybrydowy przeznaczony dla paznokci KRÓTKICH - do
-									opuszka, bez deformacji, bezproblemowych. T operfekcyjne
-									opracowanie skórek, ...
-								</p>
-								<a
-									href="https://booksy.com/pl-pl/247603_pro-nails-weronika-piniarska_paznokcie_17029_gniezno#ba_s=seo"
-									class="h-24 w-24"
-								>
-									<button
-										class="h-16 w-16 mt-14 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
-									></button>
-								</a>
+							<div class="card back bg-bright">
+								<div
+									class="absolute top-0 left-0 h-full w-full bg-dark opacity-10 z-0"
+								></div>
+								<div class="inner">
+									<p
+										class="font-poppins font-normal text-4xl text-primary z-10"
+									>
+										Manicure hybrydowy przeznaczony dla paznokci KRÓTKICH - do
+										opuszka, bez deformacji, bezproblemowych. T operfekcyjne
+										opracowanie skórek, ...
+									</p>
+									<a
+										href="https://booksy.com/pl-pl/247603_pro-nails-weronika-piniarska_paznokcie_17029_gniezno#ba_s=seo"
+										class="h-24 w-24"
+									>
+										<button
+											class="h-16 w-16 mt-14 mask-[url(/src/icons/click-button.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center"
+										></button>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -271,14 +277,14 @@
 			<section id="gallery" class="gallery relative rounded-4xl bg-secondary">
 				<div class="flex flex-col items-center">
 					<h2
-						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary"
+						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary md:text-7xl"
 					>
 						Galeria
 					</h2>
 
 					<!-- Thumbnail Grid -->
 					<div
-						class="mt-14 px-8 pb-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10"
+						class="mt-14 px-8 pb-14 grid grid-cols-1 grid-rows-2 md:grid-cols-2 lg:grid-cols-4 gap-10"
 					>
 						<!-- Repeat for each image; add data-index for JS -->
 
@@ -376,81 +382,85 @@
 				id="contact"
 				class="contact relative flex justify-center bg-bright"
 			>
-				<div class="container h-fit w-dvw flex flex-col items-center">
+				<div class="h-fit w-dvw flex flex-col items-center">
 					<h2
-						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary"
+						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary md:text-7xl"
 					>
 						Kontakt
 					</h2>
 
 					<div
-						class="contact-wrapp h-fit w-full flex flex-col items-center p-6"
+						class="contact-wrapp h-fit w-full p-6 flex flex-col items-center md:grid md:grid-cols-2"
 					>
 						<div class="contact-hours">
 							<h3
-								class="font-poppins font-normal text-center mt-14 text-5xl text-primary"
+								class="font-poppins font-normal text-center mt-14 text-5xl text-primary md:mt-0 md:text-6xl"
 							>
 								Godziny otwarcia
 							</h3>
-							<p
-								class="font-poppins font-normal text-center mt-14 text-4xl text-primary"
+							<div
+								class="days md:grid md:grid-cols-2 md:justify-center md:items-center md:mt-14"
 							>
-								Poniedziałek
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
-							>
-								10:00 - 16:00
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
-							>
-								Wtorek
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
-							>
-								08:00 - 6:00
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
-							>
-								Środa
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
-							>
-								08:00 - 16:00
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
-							>
-								Czwartek
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
-							>
-								10:00 - 16:00
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-6 text-4xl text-primary"
-							>
-								Piątek
-							</p>
-							<p
-								class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
-							>
-								08:00 - 14:00
-							</p>
+								<p
+									class="font-poppins font-normal text-center mt-14 text-4xl text-primary md:mt-2"
+								>
+									Poniedziałek
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+								>
+									10:00 - 16:00
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-6 text-4xl text-primary md:mt-2"
+								>
+									Wtorek
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+								>
+									08:00 - 6:00
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-6 text-4xl text-primary md:mt-2"
+								>
+									Środa
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+								>
+									08:00 - 16:00
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-6 text-4xl text-primary md:mt-2"
+								>
+									Czwartek
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+								>
+									10:00 - 16:00
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-6 text-4xl text-primary md:mt-2"
+								>
+									Piątek
+								</p>
+								<p
+									class="font-poppins font-normal text-center mt-2 text-4xl text-primary"
+								>
+									08:00 - 14:00
+								</p>
+							</div>
 						</div>
 						<div class="contact-info">
 							<h3
-								class="font-poppins font-normal text-center mt-14 text-5xl text-primary"
+								class="font-poppins font-normal text-center mt-14 text-5xl text-primary md:text-6xl"
 							>
 								Umów wizytę
 							</h3>
 							<h4
-								class="font-poppins font-normal text-center mt-10 text-4xl text-primary"
+								class="font-poppins font-normal text-center mt-10 text-4xl text-primary md:mt-14"
 							>
 								Gniezno ul.Waszyńskiego 21
 							</h4>
