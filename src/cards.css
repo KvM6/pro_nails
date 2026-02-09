@@ -191,7 +191,7 @@ h1{
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
 	.front,
 	.back {
 		height: 600px;
