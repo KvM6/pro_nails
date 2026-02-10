@@ -25,7 +25,7 @@ const prepareDOMElements = () => {
 const prepareDOMEvents = () => {
 	hamburger.addEventListener("click", () => {
 		hamburger.classList.toggle("is-active");
-		navMobile.classList.toggle("translate-x-full");
+		navMobile.classList.toggle("translate-y-full");
 		navMobile.classList.toggle("translate-none");
 	});
 };
