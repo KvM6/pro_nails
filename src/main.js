@@ -1,5 +1,12 @@
 // Import CSS
-// import "./style.css";
+import "./style.css";
+
+import { defineConfig } from "vite";
+
+export default defineConfig({
+	base: "/pro_nails/",
+	// ... your other config if any
+});
 
 // DOME elements
 
