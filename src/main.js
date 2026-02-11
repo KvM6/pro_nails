@@ -1,5 +1,5 @@
 // Import CSS
-import "./style.css";
+import "/style.css";
 
 // DOME elements
 
