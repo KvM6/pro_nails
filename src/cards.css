@@ -172,6 +172,21 @@ h1{
 	font-weight: 300;
 } */
 
+/* My CSS upgrade for JS flip */
+
+.card-wrapp.flipped .front {
+	transform: rotateY(-180deg);
+}
+.card-wrapp.flipped .back {
+	transform: rotateY(0deg);
+}
+
+/* Optional: subtle press feedback on tap (feels responsive) */
+.card-wrapp:active {
+	scale: 0.98;
+	transition: scale 0.15s ease-out;
+}
+
 @media screen and (max-width: 64rem) {
 	.col {
 		width: calc(33.333333% - 2rem);
@@ -197,4 +212,14 @@ h1{
 		height: 600px;
 		width: 400px;
 	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.card-wrapp:hover .front {
+		transform: rotateY(-180deg);
+	}
+	.card-wrapp:hover .back {
+		transform: rotateY(0deg);
+	}
+	/* If you have other hover-specific transitions, move them here too */
 }

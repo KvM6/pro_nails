@@ -22,7 +22,7 @@ const __dirname = dirname(__filename)
 
 export default defineConfig({
 		plugins: [tailwindcss()],
-  base: '/portfolioPageTwo/', // your repo name
+  base: '/pro_nails/', // your repo name
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
