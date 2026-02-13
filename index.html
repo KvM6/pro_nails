@@ -68,9 +68,9 @@
 			</div>
 
 			<div
-				class="nav-mobile h-full w-full -top-full fixed bg-[url(/nav-mobile.png)] bg-left bg-no-repeat bg-origin-border bg-cover flex flex-col justify-center items-center text-4xl text-secondary transition-[top] duration-700 ease-in-out md:hidden"
+				class="nav-mobile h-screen w-full -top-full fixed bg-[url(/nav-mobile.png)] bg-left bg-no-repeat bg-origin-border bg-cover flex flex-col justify-center items-center text-4xl text-secondary transition-[top] duration-700 ease-in-out md:hidden"
 			>
-				<div class="absolute top-0 h-dvh w-dvw bg-dark opacity-80 z-0"></div>
+				<div class="absolute top-0 h-screenh-dvw bg-dark opacity-80 z-0"></div>
 				<div
 					class="h-full w-full fixed flex flex-col justify-center items-center"
 				>
@@ -104,19 +104,19 @@
 		</nav>
 
 		<header
-			class="header relative top-0 left-0 h-dvh w-dvw bg-[url(/hearoIMG.png)] bg-center bg-no-repeat bg-origin-border bg-cover flex flex-col justify-end items-center rounded-b-4xl z-0"
+			class="header relative top-0 left-0 h-screen w-dvw bg-[url(/hearoIMG.png)] bg-center bg-no-repeat bg-origin-border bg-cover flex flex-col justify-end items-center rounded-b-4xl z-0"
 		>
 			<div
-				class="absolute top-0 left-0 h-dvh w-dvw bg-dark opacity-30 rounded-b-4xl z-0"
+				class="absolute top-0 left-0 h-screen w-dvw bg-dark opacity-30 rounded-b-4xl z-0"
 			></div>
-			<div class="text-container mb-32 flex flex-col items-center z-10">
+			<div class="w-full text-container mb-32 flex flex-col items-center z-10">
 				<h1
 					class="header-heading font-poppins font-bold p-3 text-8xl text-primary md:text-9xl focus-in-contract"
 				>
 					ProNails
 				</h1>
 				<h2
-					class="header-subheading font-poppins font-normal p-3 text-5xl text-primary md:text-6xl focus-in-contract"
+					class="header-subheading overflow-hidden font-poppins font-normal text-center p-3 text-5xl text-primary md:text-6xl text-focus-in md:focus-in-contract"
 				>
 					Weronika Piniarska
 				</h2>
@@ -350,7 +350,7 @@
 			</section>
 
 			<section id="gallery" class="gallery relative rounded-4xl bg-secondary">
-				<div class="flex flex-col items-center">
+				<div class="h-full flex flex-col items-center">
 					<h2
 						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary md:text-7xl"
 						data-aos="fade-up"
@@ -459,6 +459,17 @@
 								&gt;
 							</button>
 						</div>
+					</div>
+
+					<div class="h-64 w-full mt-14 flex flex-col justify-center items-center bg-secondary">
+						<h3 class="relative font-poppins font-normal text-center text-5xl text-primary z-10 md:text-6xl">Więcej moich prac znajdziesz tutaj</h3>
+						<a
+								href="https://www.instagram.com/pronails_weronika/"
+								class="w-64 text-center flex justify-center"
+								><div
+									class="h-32 w-64 my-7 mask-[url(/src/icons/instagram.svg)] mask-no-repeat mask-contain mask-center bg-primary cursor-pointer transition-colors-transform duration-300 hover:scale-125"
+								></div
+							></a>
 					</div>
 				</div>
 			</section>
