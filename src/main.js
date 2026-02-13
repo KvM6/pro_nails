@@ -63,7 +63,6 @@ const prepareDOMEvents = () => {
 	hamburger.addEventListener("click", () => {
 		hamburger.classList.toggle("is-active");
 		navMobile.classList.toggle("top-0");
-		// navMobile.classList.toggle("translate-none");
 	});
 
 	navMobileLinks.forEach((item) => {
@@ -71,7 +70,6 @@ const prepareDOMEvents = () => {
 			setTimeout(() => {
 				hamburger.classList.remove("is-active");
 				navMobile.classList.toggle("top-0");
-				// navMobile.classList.toggle("translate-none");
 			}, 500);
 		});
 	});
