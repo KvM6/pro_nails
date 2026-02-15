@@ -6,7 +6,9 @@ import Aos from "aos";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// DOME elements
+// DOMElements
+
+let sections;
 
 // Navigation
 
@@ -16,6 +18,13 @@ let navMobile;
 let navMobileLinks;
 let navDesk;
 let navDeskLinks;
+
+// Watcher
+
+let about;
+let offers;
+let gallery;
+let contact;
 
 // Header
 
@@ -34,6 +43,10 @@ const main = () => {
 // Load DOME content
 
 const prepareDOMElements = () => {
+	// DOMElements
+
+	sections = document.querySelectorAll("section[id]");
+
 	// Navigation
 
 	brandBtn = document.querySelector(".nav-brand");
@@ -41,7 +54,14 @@ const prepareDOMElements = () => {
 	navMobile = document.querySelector(".nav-mobile");
 	navMobileLinks = document.querySelectorAll(".mobile-item");
 	navDesk = document.querySelector(".nav-desktop");
-	navDeskLinks = document.querySelectorAll(".desktop-items");
+	navDeskLinks = document.querySelectorAll(".desk-item");
+
+	// Watcher
+
+	about = document.querySelector("#about");
+	offers = document.querySelector("#offers");
+	gallery = document.querySelector("#gallery");
+	contact = document.querySelector("#contact");
 
 	// Header
 
@@ -103,10 +123,15 @@ const prepareDOMEvents = () => {
 	});
 };
 
+// Navigation
+
 const mobileLinksAnimation = () => {
 	navMobileLinks.forEach((item) => {
 		item.classList.remove("animate-slide-down");
 	});
+};
+
+const deskWatcher = () => {
 };
 
 // Load main function on Web load
