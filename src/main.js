@@ -63,10 +63,14 @@ const prepareDOMEvents = () => {
 	hamburger.addEventListener("click", () => {
 		hamburger.classList.toggle("is-active");
 		navMobile.classList.toggle("top-0");
+		navMobileLinks.forEach((item) => {
+			item.classList.toggle("animate-slide-down");
+		});
 	});
 
 	navMobileLinks.forEach((item) => {
 		item.addEventListener("click", () => {
+			mobileLinksAnimation();
 			setTimeout(() => {
 				hamburger.classList.remove("is-active");
 				navMobile.classList.toggle("top-0");
@@ -96,6 +100,12 @@ const prepareDOMEvents = () => {
 				card.classList.toggle("flipped");
 			}
 		});
+	});
+};
+
+const mobileLinksAnimation = () => {
+	navMobileLinks.forEach((item) => {
+		item.classList.remove("animate-slide-down");
 	});
 };
 
