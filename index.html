@@ -10,9 +10,44 @@
 
 		<!-- <link rel="stylesheet" href="./src/style.css" /> -->
 		<title>Pro Nails Weronika Piniarska</title>
-		<script type="module" crossorigin src="/pro_nails/assets/index-Hk2FdfOa.js"></script>
-		<link rel="stylesheet" crossorigin href="/pro_nails/assets/index-Be7O8xeW.css">
+		<script type="module" crossorigin src="/pro_nails/assets/index-5NrhBuFe.js"></script>
+		<link rel="stylesheet" crossorigin href="/pro_nails/assets/index-bTEbojg-.css">
 	</head>
+	<div
+		id="modal"
+		class="fixed inset-0 bg-secondary hidden items-center justify-center transition duration-300 z-50"
+	>
+		<div class="relative h-full w-auto aspect-3/4 p-4">
+			<!-- Close – no onclick here anymore -->
+			<button
+				id="close-mod"
+				class="absolute top-4 right-6 px-10 py-5 text-bright text-7xl font-normal cursor-pointer z-50 hover:text-primary"
+			>
+				×
+			</button>
+
+			<img
+				id="modalImage"
+				src=""
+				alt="Enlarged nail design"
+				class="h-full w-full object-contain mx-auto rounded transition-transform duration-300 hover:scale-[1.4]"
+			/>
+
+			<!-- Navigation – no onclick here -->
+			<button
+				id="left-mod"
+				class="absolute left-4 top-1/2 -translate-y-1/2 px-10 text-bright text-9xl font-normal cursor-pointer hover:text-primary"
+			>
+				‹
+			</button>
+			<button
+				id="right-mod"
+				class="absolute right-4 top-1/2 -translate-y-1/2 px-10 text-bright text-9xl font-normal cursor-pointer hover:text-primary"
+			>
+				›
+			</button>
+		</div>
+	</div>
 	<body class="">
 		<nav id="navbar" class="w-screen fixed top-0 z-10">
 			<div class="w-full flex flex-row justify-center shadow-md">
@@ -23,7 +58,7 @@
 					<div class="nav-container w-full flex flex-row justify-between">
 						<a href="#" class="z-0">
 							<button
-								class="nav-brand p-6 font-poppins text-5xl text-primary hover:text-secondary cursor-pointer transition-colors duration-300"
+								class="nav-brand p-6 font-parisienne text-5xl text-primary hover:text-secondary cursor-pointer transition-colors duration-300"
 								type="button"
 							>
 								PN
@@ -118,12 +153,12 @@
 			></div>
 			<div class="w-full text-container flex flex-col items-center z-10">
 				<h1
-					class="header-heading font-poppins font-bold p-3 text-8xl text-primary md:text-9xl focus-in-contract"
+					class="header-heading font-parisienne font-bold p-3 text-9xl text-primary md:text-[12rem] focus-in-contract"
 				>
-					ProNails
+					Pro Nails
 				</h1>
 				<h2
-					class="header-subheading overflow-hidden font-poppins font-normal text-center p-3 text-5xl text-primary md:text-6xl text-focus-in md:focus-in-contract"
+					class="header-subheading overflow-hidden font-parisienne font-normal text-center p-3 text-6xl text-primary md:text-9xl text-focus-in md:focus-in-contract"
 				>
 					Weronika Piniarska
 				</h2>
@@ -137,7 +172,7 @@
 			<section id="about" class="about-me relative flex justify-center">
 				<div class="flex flex-col items-center">
 					<div
-						class="h-full w-full flex flex-col items-center bg-[url(/aboutIMG.jpeg)] bg-center bg-no-repeat bg-origin-border bg-cover rounded-4xl z-0"
+						class="h-full w-full flex flex-col items-center bg-[url(/aboutIMG.jpeg)] bg-center bg-no-repeat bg-origin-border bg-cover rounded-4xl z-0 md:h-screen"
 					>
 						<div
 							class="absolute top-0 h-full w-full bg-dark opacity-80 rounded-4xl z-0"
@@ -150,26 +185,26 @@
 							O mnie
 						</h2>
 						<p
-							class="relative font-poppins font-normal text-center p-6 mt-14 text-4xl text-primary z-10 md:text-5xl lg:px-24"
+							class="relative font-poppins font-normal text-center p-6 mt-14 text-4xl text-primary z-10 md:text-5xl lg:px-56 lg:mb-14"
 						>
 							Cześć! Jestem Weronika i tworzę w Gnieźnie salon
 							<span class="font-bold text-secondary">Pro Nails</span>, w którym
 							jakość i spokój ma największe znaczenie.
 						</p>
 						<p
-							class="relative font-poppins font-normal text-center p-6 text-4xl text-primary z-10 md:text-5xl lg:px-24"
+							class="relative font-poppins font-normal text-center p-6 text-4xl text-primary z-10 md:text-5xl lg:px-56 lg:mb-14"
 						>
 							W pracy stawiam na minimalizm. Mniej znaczy więcej, czego dowodem
 							są kleintki rozkochane w delikatnym manicure z odrobiną luksusu.
 						</p>
 						<p
-							class="relative font-poppins font-normal text-center p-6 text-4xl text-primary z-10 md:text-5xl lg:px-24"
+							class="relative font-poppins font-normal text-center p-6 text-4xl text-primary z-10 md:text-5xl lg:px-56 lg:mb-14"
 						>
 							Stawiam na prostotę klasycznego frencza, czy subtelnie rozmyty
 							efekt babyboomer.
 						</p>
 						<p
-							class="relative font-poppins font-normal text-center p-6 mb-80 text-4xl text-primary z-10 md:text-5xl lg:px-24"
+							class="relative font-poppins font-normal text-center p-6 mb-80 text-4xl text-primary z-10 md:text-5xl lg:px-56 lg:mb-14"
 						>
 							W przerwie od upiększania dłoni, uwielbiam sport, poza pracą
 							jestem bardzo aktywną osobą. Uwielbiam podróże i naturę, bardzo
@@ -380,9 +415,8 @@
 							<img
 								src="/pro_nails/assets/nails_5-BJp89DeS.jpeg"
 								alt="Nail design 1"
-								class="w-full h-full object-cover"
-								data-index="0"
-								onclick="openModal(this)"
+								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
+								data-index="1"
 							/>
 						</div>
 						<div
@@ -393,9 +427,8 @@
 							<img
 								src="/pro_nails/assets/nails_6-BMrEEIck.jpeg"
 								alt="Nail design 2"
-								class="w-full h-full object-cover"
-								data-index="1"
-								onclick="openModal(this)"
+								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
+								data-index="2"
 							/>
 						</div>
 						<div
@@ -406,9 +439,8 @@
 							<img
 								src="/pro_nails/assets/nails_3-Db1ZeaH-.jpeg"
 								alt="Nail design 3"
-								class="w-full h-full object-cover"
-								data-index="2"
-								onclick="openModal(this)"
+								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
+								data-index="3"
 							/>
 						</div>
 						<div
@@ -419,9 +451,8 @@
 							<img
 								src="/pro_nails/assets/nails_4-bBsyOr9C.jpeg"
 								alt="Nail design 3"
-								class="w-full h-full object-cover"
-								data-index="3"
-								onclick="openModal(this)"
+								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
+								data-index="4"
 							/>
 						</div>
 						<div
@@ -432,9 +463,8 @@
 							<img
 								src="/pro_nails/assets/nails_7-PE7iMcXi.jpeg"
 								alt="Nail design 3"
-								class="w-full h-full object-cover"
-								data-index="3"
-								onclick="openModal(this)"
+								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
+								data-index="5"
 							/>
 						</div>
 						<div
@@ -445,53 +475,12 @@
 							<img
 								src="/pro_nails/assets/nails_2-Ce9guBYN.jpeg"
 								alt="Nail design 3"
-								class="w-full h-full object-cover"
-								data-index="3"
-								onclick="openModal(this)"
+								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
+								data-index="6"
 							/>
 						</div>
 
 						<!-- Add more images as needed -->
-					</div>
-
-					<!-- Modal (hidden by default flex on) -->
-					<div
-						id="modal"
-						class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center z-50 hidden"
-					>
-						<div class="relative max-w-4xl w-full p-4">
-							<!-- Close Button -->
-							<button
-								class="absolute top-4 right-4 text-white text-3xl font-light"
-								onclick="closeModal()"
-							>
-								&times;
-							</button>
-
-							<!-- Large Image -->
-							<img
-								id="modalImage"
-								src=""
-								alt="Enlarged nail design"
-								class="w-full h-auto object-contain rounded"
-							/>
-
-							<!-- Navigation Buttons -->
-							<button
-								id="prevBtn"
-								class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-light"
-								onclick="changeImage(-1)"
-							>
-								&lt;
-							</button>
-							<button
-								id="nextBtn"
-								class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-light"
-								onclick="changeImage(1)"
-							>
-								&gt;
-							</button>
-						</div>
 					</div>
 
 					<div
