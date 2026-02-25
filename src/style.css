@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 @import "tailwindcss";
 @import "./hamburger.css";
 @import "./cards.css";
@@ -29,6 +30,7 @@
 	/* fonts */
 
 	--font-poppins: "Poppins", sans-serif;
+	--font-parisienne: "Parisienne", cursive;
 
 	/* animations */
 

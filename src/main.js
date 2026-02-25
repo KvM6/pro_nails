@@ -35,6 +35,10 @@ let aboutSection;
 
 let cardWrapp;
 
+// Gallery
+
+let images;
+
 const main = () => {
 	prepareDOMElements();
 	prepareDOMEvents();
@@ -71,6 +75,10 @@ const prepareDOMElements = () => {
 	// Offers
 
 	cardWrapp = document.querySelectorAll(".card-wrapp");
+
+	// Gallery
+
+	images = document.querySelectorAll(".grid img");
 };
 
 // Load all events
@@ -121,6 +129,41 @@ const prepareDOMEvents = () => {
 			}
 		});
 	});
+
+	// Gallery
+
+	galleryThumbnails.forEach((thumb) => {
+		thumb.addEventListener("click", () => {
+			openModal(thumb);
+		});
+	});
+
+	const modal = document.getElementById("modal");
+	if (modal) {
+		// Close button
+		const closeBtn = modal.querySelector("#close-mod");
+		closeBtn.addEventListener("click", closeModal);
+
+		// Previous / Next buttons
+		const prevBtn = modal.querySelector("#left-mod");
+		const nextBtn = modal.querySelector("#right-mod");
+
+		if (prevBtn) prevBtn.addEventListener("click", () => changeImage(-1));
+		if (nextBtn) nextBtn.addEventListener("click", () => changeImage(1));
+
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "ArrowLeft") changeImage(-1);
+		});
+
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "ArrowRight") changeImage(1);
+		});
+
+		// Keep the overlay click & Esc key listeners you already have
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Escape") closeModal();
+		});
+	}
 };
 
 // Navigation
@@ -131,8 +174,37 @@ const mobileLinksAnimation = () => {
 	});
 };
 
-const deskWatcher = () => {
-};
+// Gallery
+
+// Collect images (run once after DOM ready)
+let galleryImages = [];
+let currentIndex = 0;
+
+// In prepareDOMElements() or at the top level after DOMContentLoaded
+const galleryThumbnails = document.querySelectorAll("#gallery img"); // targets all <img> in gallery
+galleryImages = Array.from(galleryThumbnails).map((img) => img.src);
+
+// Function definitions
+function openModal(imgElement) {
+	currentIndex = Array.from(galleryThumbnails).indexOf(imgElement); // find position
+	const modalImg = document.getElementById("modalImage");
+	if (modalImg && window.matchMedia("(min-width: 768px)").matches) {
+		modalImg.src = galleryImages[currentIndex];
+		document.getElementById("modal")?.classList.remove("hidden");
+		document.getElementById("modal")?.classList.add("flex");
+	}
+}
+
+function closeModal() {
+	document.getElementById("modal")?.classList.add("hidden");
+	document.getElementById("modal")?.classList.remove("flex");
+}
+
+function changeImage(direction) {
+	currentIndex =
+		(currentIndex + direction + galleryImages.length) % galleryImages.length;
+	document.getElementById("modalImage").src = galleryImages[currentIndex];
+}
 
 // Load main function on Web load
 
