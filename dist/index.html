@@ -3,15 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<meta
+			name="description"
+			content="Profesjonalny manicure hybrydowy, żelowy i stylizacja paznokci w Gnieźnie. Umów wizytę online przez Booksy. Salon Pro Nails Weronika Piniarska."
+		/>
+		<link rel="icon" href="/pro_nails/assets/PN-DtYzQlfd.svg" />
 		<!-- Style -->
 
 		<!-- Main -->
 
 		<!-- <link rel="stylesheet" href="./src/style.css" /> -->
-		<title>Pro Nails Weronika Piniarska</title>
-		<script type="module" crossorigin src="/pro_nails/assets/index-5NrhBuFe.js"></script>
-		<link rel="stylesheet" crossorigin href="/pro_nails/assets/index-bTEbojg-.css">
+		<title>Stylizacja paznokci Gniezno Pro Nails Weronika Piniarska</title>
+		<script type="module" crossorigin src="/pro_nails/assets/index-DFi4Gzjz.js"></script>
+		<link rel="stylesheet" crossorigin href="/pro_nails/assets/index-BJZNLTNQ.css">
 	</head>
 	<div
 		id="modal"
@@ -153,18 +157,18 @@
 			></div>
 			<div class="w-full text-container flex flex-col items-center z-10">
 				<h1
-					class="header-heading font-parisienne font-bold p-3 text-9xl text-primary md:text-[12rem] focus-in-contract"
+					class="header-heading font-parisienne font-bold p-3 text-9xl text-focus-in text-primary md:text-[12rem]"
 				>
 					Pro Nails
 				</h1>
 				<h2
-					class="header-subheading overflow-hidden font-parisienne font-normal text-center p-3 text-6xl text-primary md:text-9xl text-focus-in md:focus-in-contract"
+					class="header-subheading overflow-hidden font-parisienne font-normal text-center p-3 text-6xl text-focus-in text-primary md:text-9xl"
 				>
 					Weronika Piniarska
 				</h2>
 			</div>
 			<button
-				class="header-button h-24 w-24 mb-48 mask-[url(/src/icons/right_arrow.svg)] mask-no-repeat mask-contain mask-center bg-primary hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center transition-colors duration-300 lg:h-40 lg:w-40"
+				class="header-button h-24 w-24 mb-48 mask-[url(/src/icons/right_arrow.svg)] mask-no-repeat mask-contain mask-center bg-primary text-focus-in hover:bg-secondary rotate-90 cursor-pointer z-10 scale-up-center transition-colors duration-300 lg:h-40 lg:w-40"
 			></button>
 		</header>
 
@@ -173,6 +177,8 @@
 				<div class="flex flex-col items-center">
 					<div
 						class="h-full w-full flex flex-col items-center bg-[url(/aboutIMG.jpeg)] bg-center bg-no-repeat bg-origin-border bg-cover rounded-4xl z-0 md:h-screen"
+						data-aos="fade-up"
+						data-aos-delay="100"
 					>
 						<div
 							class="absolute top-0 h-full w-full bg-dark opacity-80 rounded-4xl z-0"
@@ -180,7 +186,7 @@
 						<h2
 							class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary z-10 md:text-7xl"
 							data-aos="fade-up"
-							data-aos-delay="100"
+							data-aos-delay="200"
 						>
 							O mnie
 						</h2>
@@ -188,7 +194,7 @@
 							class="relative font-poppins font-normal text-center p-6 mt-14 text-4xl text-primary z-10 md:text-5xl lg:px-56 lg:mb-14"
 						>
 							Cześć! Jestem Weronika i tworzę w Gnieźnie salon
-							<span class="font-bold text-secondary">Pro Nails</span>, w którym
+							<span class="font-poppins font-bold text-secondary">Pro Nails</span>, w którym
 							jakość i spokój ma największe znaczenie.
 						</p>
 						<p
@@ -217,12 +223,14 @@
 			<section
 				id="offers"
 				class="offers relative flex justify-center bg-bright"
+				data-aos="fade-up"
+				data-aos-delay="100"
 			>
 				<div class="flex flex-col items-center">
 					<h2
 						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary md:text-7xl"
 						data-aos="fade-up"
-						data-aos-delay="100"
+						data-aos-delay="200"
 					>
 						Oferta
 					</h2>
@@ -391,12 +399,17 @@
 				</div>
 			</section>
 
-			<section id="gallery" class="gallery relative rounded-4xl bg-secondary">
+			<section
+				id="gallery"
+				class="gallery relative rounded-4xl bg-secondary"
+				data-aos="fade-up"
+				data-aos-delay="100"
+			>
 				<div class="h-full flex flex-col items-center">
 					<h2
 						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary md:text-7xl"
 						data-aos="fade-up"
-						data-aos-delay="100"
+						data-aos-delay="200"
 					>
 						Galeria
 					</h2>
@@ -413,10 +426,11 @@
 							data-aos-delay="200"
 						>
 							<img
-								src="/pro_nails/assets/nails_5-BJp89DeS.jpeg"
+								src="/pro_nails/nails_5.jpeg"
 								alt="Nail design 1"
 								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
 								data-index="1"
+								loading="lazy"
 							/>
 						</div>
 						<div
@@ -425,10 +439,11 @@
 							data-aos-delay="200"
 						>
 							<img
-								src="/pro_nails/assets/nails_6-BMrEEIck.jpeg"
+								src="/pro_nails/nails_6.jpeg"
 								alt="Nail design 2"
 								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
 								data-index="2"
+								loading="lazy"
 							/>
 						</div>
 						<div
@@ -437,10 +452,11 @@
 							data-aos-delay="200"
 						>
 							<img
-								src="/pro_nails/assets/nails_3-Db1ZeaH-.jpeg"
+								src="/pro_nails/nails_3.jpeg"
 								alt="Nail design 3"
 								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
 								data-index="3"
+								loading="lazy"
 							/>
 						</div>
 						<div
@@ -449,10 +465,11 @@
 							data-aos-delay="200"
 						>
 							<img
-								src="/pro_nails/assets/nails_4-bBsyOr9C.jpeg"
+								src="/pro_nails/nails_4.jpeg"
 								alt="Nail design 3"
 								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
 								data-index="4"
+								loading="lazy"
 							/>
 						</div>
 						<div
@@ -461,10 +478,11 @@
 							data-aos-delay="200"
 						>
 							<img
-								src="/pro_nails/assets/nails_7-PE7iMcXi.jpeg"
+								src="/pro_nails/nails_7.jpeg"
 								alt="Nail design 3"
 								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
 								data-index="5"
+								loading="lazy"
 							/>
 						</div>
 						<div
@@ -473,10 +491,11 @@
 							data-aos-delay="200"
 						>
 							<img
-								src="/pro_nails/assets/nails_2-Ce9guBYN.jpeg"
+								src="/pro_nails/nails_2.jpeg"
 								alt="Nail design 3"
 								class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.2]"
 								data-index="6"
+								loading="lazy"
 							/>
 						</div>
 
@@ -485,6 +504,8 @@
 
 					<div
 						class="h-64 w-full mt-14 flex flex-col justify-center items-center bg-secondary"
+						data-aos="fade-up"
+						data-aos-delay="100"
 					>
 						<h3
 							class="relative font-poppins font-normal text-center text-5xl text-primary md:text-6xl"
@@ -505,12 +526,14 @@
 			<section
 				id="contact"
 				class="contact relative flex justify-center bg-bright"
+				data-aos="fade-up"
+				data-aos-delay="100"
 			>
 				<div class="h-fit w-full flex flex-col items-center">
 					<h2
 						class="relative font-poppins font-bold p-6 mt-32 text-6xl text-primary md:text-7xl"
 						data-aos="fade-up"
-						data-aos-delay="100"
+						data-aos-delay="200"
 					>
 						Kontakt
 					</h2>
