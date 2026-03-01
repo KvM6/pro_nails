@@ -49,15 +49,15 @@ export default defineConfig({
 		}),
 	],
 
-	build: {
-		minify: "esbuild", // default anyway — good for JS/CSS
-		// chunkSizeWarningLimit: 800,   // optional
-	},
-
 	base: "/pro_nails/",
 	resolve: {
 		alias: {
 			"@": resolve(__dirname, "src"),
 		},
+	},
+
+	build: {
+		minify: "esbuild", // default anyway — good for JS/CSS
+		// chunkSizeWarningLimit: 800,   // optional
 	},
 });
