@@ -47,7 +47,7 @@ This project is built from scratch with modern tools to show I can learn quickly
 
 ## Live Preview
 
-https://kvm6.github.io/pro_nails/
+https://pro-nails-weronika-piniarska.vercel.app
 
 ## Contact
 
