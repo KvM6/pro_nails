@@ -1,6 +1,5 @@
 // Import CSS
 import "./style.css";
-import Aos from "aos";
 
 // Import AOS Library
 import AOS from "aos";
