@@ -15,6 +15,7 @@ import { defineConfig } from "vite";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 import viteImagemin from "@vheemstra/vite-plugin-imagemin";
+import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminPngquant from "imagemin-pngquant";
 import imageminSvgo from "imagemin-svgo";
 import tailwindcss from "@tailwindcss/vite";
@@ -29,6 +30,12 @@ export default defineConfig({
 
 		viteImagemin({
 			plugins: {
+
+				jpg: imageminMozjpeg({
+					quality: 82,
+					progressive: true,
+				}),
+
 				png: imageminPngquant({
 					quality: [0.2, 0.85], // ← Lower min to 0.5 (or even 0.4–0.6) for more aggressive compression
 					//   0.85 max keeps good detail on nails/chrome/glitter
@@ -42,7 +49,7 @@ export default defineConfig({
 				}),
 			},
 
-			include: [/\.(png|svg)$/i],
+			include: [/\.(png|jpe?g|svg)$/i],
 			cache: true,
 			verbose: true, // ← Keep this — shows detailed logs next build
 			// uncomment to see compression stats in terminal
@@ -52,9 +59,10 @@ export default defineConfig({
 	build: {
 		minify: "esbuild", // default anyway — good for JS/CSS
 		// chunkSizeWarningLimit: 800,   // optional
+		outDir: 'dist'
 	},
 
-	base: "/pro_nails/",
+	base: "/",
 	resolve: {
 		alias: {
 			"@": resolve(__dirname, "src"),
