@@ -61,7 +61,7 @@ Kamil -->
 
 # Pro Nails – Portfolio Website
 
-![Pro Nails Hero](https://pro-nails-weronika-piniarska.vercel.app/hearoIMG.jpeg) <!-- Replace with your actual hero screenshot if you want -->
+<img src="./screen/screenOne.png" alt="Pro Nails hero section screen" width="800" height="600" style="border-radius: 12px;">
 
 A clean, minimal, and elegant portfolio website for a professional nail stylist. Designed to showcase stunning nail art, services, and client work with a focus on beautiful user experience.
 
