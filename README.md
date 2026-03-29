@@ -61,7 +61,7 @@ Kamil -->
 
 # Pro Nails – Portfolio Website
 
-![Pro Nails Hero](https://pro-nails-weronika-piniarska.vercel.app/og-image.jpg) <!-- Replace with your actual hero screenshot if you want -->
+![Pro Nails Hero](https://pro-nails-weronika-piniarska.vercel.app/hearoIMG.jpeg) <!-- Replace with your actual hero screenshot if you want -->
 
 A clean, minimal, and elegant portfolio website for a professional nail stylist. Designed to showcase stunning nail art, services, and client work with a focus on beautiful user experience.
 
@@ -83,9 +83,6 @@ Built from scratch to demonstrate quick learning, attention to clean code, and a
 
 ### 🌐 Live Preview
 → [View the live website](https://pro-nails-weronika-piniarska.vercel.app)
-
-### 📸 Screenshots
-*(Add 2–3 screenshots here – before/after gallery view, mobile menu, booking section, etc.)*
 
 ### 🎯 Who is this for?
 Nail stylists, beauty professionals, or anyone looking for a modern, high-quality portfolio website.
