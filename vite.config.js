@@ -1,16 +1,3 @@
-// import { defineConfig } from "vite";
-// import tailwindcss from "@tailwindcss/vite";
-
-// export default defineConfig({
-// 	plugins: [tailwindcss()],
-// 	base: "/pro_nails/",
-// 	resolve: {
-// 		alias: {
-// 			"@": path.resolve(__dirname, "src"),
-// 		},
-// 	},
-// });
-
 import { defineConfig } from "vite";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
@@ -30,7 +17,6 @@ export default defineConfig({
 
 		viteImagemin({
 			plugins: {
-
 				jpg: imageminMozjpeg({
 					quality: 82,
 					progressive: true,
@@ -59,7 +45,7 @@ export default defineConfig({
 	build: {
 		minify: "esbuild", // default anyway — good for JS/CSS
 		// chunkSizeWarningLimit: 800,   // optional
-		outDir: 'dist'
+		outDir: "dist",
 	},
 
 	base: "/",
